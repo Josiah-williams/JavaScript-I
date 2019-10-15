@@ -62,7 +62,7 @@ console.log(Antonietta.gender)
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
-const letspeak = function() {return 'hello my name is ${this.name}!'; }
+const letspeak = function() {return `hello my name is ${this.name}!`; }
 kennan.speak = letspeak;
 
 console.log(kennan.speak());
