@@ -18,23 +18,24 @@ const example = {
 }
 
 // Write your intern objects here:
-const Newinterns= {Mitzi,Kenan,keven,Gannie,Antonietta}
-
-
 const Mitzi= {id:1, Email:'mmelloy0@psu.edu', Name:'Mitzi', Gender:'F'}
-const Kenan= {id:2,
+
+const Kennan= {id:2,
   Email:'kdiben1@tinypic.com', 
   Name:'Kenan', 
   gender:'M'}
-const Keven= {id:3, 
+
+  const keven= {id:3, 
   Email:'kmummery2@wikimedia.org', 
   Name:'Keven',
   Gender:'M'}
-const Gannie= {id:4,
+
+  const Gannie= {id:4,
   Email:'gmartinson3@illinois.edu', 
   Name:'Gannie',
   Gender:'M'}
-const Antonietta= {id:5, 
+
+  const Antonietta= {id:5, 
   Email: 'adaine5@samsung.com',
   Name:'Antonietta',
   Gender:'F'}
@@ -45,10 +46,10 @@ const Antonietta= {id:5,
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-console.log(mitzi.name)
+console.log(Mitzi.name)
 
 // Kennan's ID
-console.log(kennan.id)
+console.log(Kennan.id)
 
 // Keven's email
 console.log(keven.email)
@@ -61,16 +62,16 @@ console.log(Antonietta.gender)
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-// console.log(kennan.speak());
-const letspeak = function() {return `hello my name is ${this.name}!`; }
-kennan.speak = letspeak;
+Kennan.speak = () => (
+  `Hello, my name is Kennan!`
+)
 
-console.log(kennan.speak());
+console.log(Kennan.speak())
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
 const letMultiply =function(x,y) {return x*y;}
-antonietta.multiplyNums = letMultiply;
-console.log(antonietta.multiplyNums(3,4));
+Antonietta.multiplyNums = letMultiply;
+console.log(Antonietta.multiplyNums(3,4));
 // === Great work! === Head over to the the arrays.js. You may come back and attempt the Stretch Challenge once you have completed the challenges in arrays.js and function-conversion.js.
 
 // ==== Stretch Challenge: Nested Objects and the this keyword ==== 
